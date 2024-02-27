@@ -11,13 +11,7 @@ import java.util.List;
  */
 @Repository
 public interface PeopleRepository extends JpaRepository<Person, Integer> {
-    List<Person> findByName(String name);
 
-    List<Person> findByNameOrderByAge(String name);
-
-    List<Person> findByEmail(String email);
-    List<Person> findByNameStartingWith(String sta);
-    List<Person> findByNameOrEmail(String name , String email);
 
 
 }

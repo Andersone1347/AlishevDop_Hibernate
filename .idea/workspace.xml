@@ -10,17 +10,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b21f0daf-0030-4743-9298-f7920c4955aa" name="Changes" comment="finish MVC">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/alishev/springcourse/models/Item.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/alishev/springcourse/repositories/ItemRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/alishev/springcourse/repositories/PeopleRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/alishev/springcourse/services/ItemService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/alishev/springcourse/services/PeopleService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/alishev/springcourse/dao/PersonDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/alishev/springcourse/config/SpringConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/alishev/springcourse/config/SpringConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/alishev/springcourse/controllers/PeopleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/alishev/springcourse/controllers/PeopleController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/alishev/springcourse/dao/PersonDAO.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/alishev/springcourse/models/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/alishev/springcourse/models/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/alishev/springcourse/repositories/PeopleRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/alishev/springcourse/repositories/PeopleRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/alishev/springcourse/services/PeopleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/alishev/springcourse/services/PeopleService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,6 +27,7 @@
       <list>
         <option value="HTML File" />
         <option value="Interface" />
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
@@ -67,7 +63,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "Tomcat Server.Tomcat 8.5.98.executor": "Debug",
+    "Tomcat Server.Tomcat 8.5.98.executor": "Run",
     "Tomcat Server.index.jsp.executor": "Run",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
@@ -212,7 +208,8 @@
       <workItem from="1708329766615" duration="331000" />
       <workItem from="1708330216338" duration="649000" />
       <workItem from="1708962558559" duration="8799000" />
-      <workItem from="1709038183931" duration="4348000" />
+      <workItem from="1709038183931" duration="4552000" />
+      <workItem from="1709046091347" duration="6990000" />
     </task>
     <task id="LOCAL-00001" summary="Control">
       <option name="closed" value="true" />
@@ -246,7 +243,15 @@
       <option name="project" value="LOCAL" />
       <updated>1708974264600</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="finish MVC">
+      <option name="closed" value="true" />
+      <created>1709045574507</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1709045574507</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -273,7 +278,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/ru/alishev/springcourse/services/PeopleService.java</url>
-          <line>50</line>
+          <line>48</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>

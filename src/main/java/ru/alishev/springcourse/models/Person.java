@@ -6,6 +6,7 @@ import javax.validation.constraints.Min;
 import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.Size;
 import java.util.List;
+import java.util.Objects;
 
 /**
  * @author Neil Alishev
@@ -27,10 +28,6 @@ public class Person {
     @Column(name = "age")
     private int age;
 
-    @Column(name = "email")
-    @NotEmpty(message = "Email should not be empty")
-    @Email
-    private String email;
     @OneToMany(mappedBy = "owner")
     private List<Item> items;
 
@@ -67,12 +64,16 @@ public class Person {
         this.age = age;
     }
 
-    public String getEmail() {
-        return email;
+
+
+
+
+    public List<Item> getItems() {
+        return items;
     }
 
-    public void setEmail(String email) {
-        this.email = email;
+    public void setItems(List<Item> items) {
+        this.items = items;
     }
 
     @Override
@@ -82,5 +83,18 @@ public class Person {
                 ", name='" + name + '\'' +
                 ", age=" + age +
                 '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Person person = (Person) o;
+        return id == person.id && age == person.age && Objects.equals(name, person.name) && Objects.equals(items, person.items);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(id, name, age, items);
     }
 }

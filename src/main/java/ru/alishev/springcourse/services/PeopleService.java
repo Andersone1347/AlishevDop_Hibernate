@@ -34,6 +34,7 @@ public class PeopleService {
 
     @Transactional
     public void save(Person person) {
+
         peopleRepository.save(person);
     }
 
@@ -46,8 +47,5 @@ public class PeopleService {
     @Transactional
     public void delete(int id) {
         peopleRepository.deleteById(id);
-    }
-    public void test() {
-        System.out.println("Testing here with debug");
     }
 }
